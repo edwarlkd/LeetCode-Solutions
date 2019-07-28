@@ -1,0 +1,15 @@
+func twoSum(nums []int, target int) []int {
+
+  // Brute-Force method
+  var rst []int
+      for i := 0; i < len(nums) - 1; i++ {      
+             // 5 4 2
+          for j := i + 1; j <  len(nums); j++ {
+              if (nums[i] + nums[j] == target){
+                  rst = append(rst, i)
+                  rst = append(rst, j)
+              }                
+          }
+    }
+      return rst    
+}
